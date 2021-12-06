@@ -45,6 +45,9 @@ You can remove it from there by hitting Super (Win) + R and typing in `shell:sta
 
 ```ini
 ; Uses run.exe from https://github.com/microsoft/WSL/issues/841#issuecomment-270375321
+[settings]
+workingDir = C:\Users\Soumi
+
 [lookups]
 list = run wsl ls -la > test.txt
 test = run wsl ls
@@ -55,6 +58,8 @@ list = false
 test = true
 email = copy
 ```
+
+The `settings` section contains your user settings. Remember to replace your workingDir with whatever location you want. **Note that all commands are executed in `workingDir`**
 
 Here, the `lookups` section contains all your commands. When the menu pops up, you can enter these to:
 

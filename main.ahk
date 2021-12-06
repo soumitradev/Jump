@@ -10,7 +10,7 @@ iniWidth := 800					;initial width of gui
 font = Roboto Mono
 limit := findLimit(iniWidth)	;number of characters user can type before exceeding the width of the gui
 guiWidth := iniWidth + 13*2		; 13 is the unreduceable left-margin spacing between gui and text
-workingDir := "C:\Users\Soumi\"
+IniRead, workingDir, settings.ini, settings, workingDir
 ;===========================
 
 ;===== Tray Menu =====
