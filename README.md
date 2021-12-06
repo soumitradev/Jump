@@ -16,6 +16,8 @@ To run it, [install AutoHotKey](https://www.autohotkey.com/), and after you do t
 
 [settings.ini](./settings.ini) is a good enough example of how to configure this, but I'll explain how this works.
 
+Also, since all your shortcuts are in `settings.ini`, you don't need to restart the AHK script to update your shortcuts. Editing the ini file is enough.
+
 The shortcut to open the menu is Super (Win) + Enter. This can be changed in the `main.ahk` script to whatever you want.
 
 ```
